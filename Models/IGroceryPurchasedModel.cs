@@ -10,5 +10,6 @@ namespace GroceriesApi.Models
         decimal totalprice { get; set; }
         string store { get; set; }
         DateTime date { get; set; }
+        bool onsale { get; set; }
     }
 }

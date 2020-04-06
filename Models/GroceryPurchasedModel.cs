@@ -20,5 +20,6 @@ namespace GroceriesApi.Models
         public string grocery { get; set; }
         public decimal quantity { get; set; }
         public DateTime date { get; set; }
+        public bool onsale { get; set; }
     }
 }
