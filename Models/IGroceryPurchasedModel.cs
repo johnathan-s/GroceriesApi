@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GroceriesApi.Models
 {
-    public interface IGroceryPurchasedModel : IGroceryModel
+    public interface IGroceryPurchasedModel : IGroceryModel, IGroceryDueDate
     {
         decimal itemprice { get; set; }
         decimal totalprice { get; set; }
