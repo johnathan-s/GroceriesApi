@@ -41,6 +41,16 @@ namespace GroceriesApi.Controllers
         [HttpPost]
         public ActionResult<GroceryListModel> Create(GroceryListModel groceryListModel)
         {
+            List<GroceryListModel> currentList = _groceryListService.Get();
+
+            foreach(GroceryListModel listItem in currentList)
+            {
+                // checking for duplicate grocery
+                if (groceryListModel.grocery.ToUpper().Trim() == listItem.grocery.ToUpper().Trim())
+                {
+                    return Conflict();
+                }
+            }
             _groceryListService.Create(groceryListModel);
 
             return CreatedAtRoute("GetGroceryListItem", new { id = groceryListModel.id.ToString() }, groceryListModel);

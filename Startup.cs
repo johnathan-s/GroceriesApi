@@ -37,6 +37,8 @@ namespace GroceriesApi
 
             services.AddSingleton<GroceryListService>();
 
+            services.AddSingleton<GroceryDueDateService>();
+
             services.AddSingleton<GroceryPurchasedService>();
 
             services.AddControllers();
