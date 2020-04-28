@@ -50,7 +50,7 @@ namespace GroceriesApi.Controllers
         {
             _groceryPurchasedService.Create(groceryPurchasedModelList);
 
-            return NoContent();
+            return Ok();
         }
 
         [HttpPut("{id:length(24)}")]
