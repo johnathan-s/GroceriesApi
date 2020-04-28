@@ -45,6 +45,14 @@ namespace GroceriesApi.Controllers
             return CreatedAtRoute("GetGroceryPurchasedItem", new { id = groceryPurchasedModel.id.ToString() }, groceryPurchasedModel);
         }
 
+        [HttpPost]
+        public IActionResult Create(List<GroceryPurchasedModel> groceryPurchasedModelList)
+        {
+            _groceryPurchasedService.Create(groceryPurchasedModelList);
+
+            return NoContent();
+        }
+
         [HttpPut("{id:length(24)}")]
         public IActionResult Update(string id, GroceryPurchasedModel groceryPurchasedModelIn)
         {

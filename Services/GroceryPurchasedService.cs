@@ -38,6 +38,12 @@ namespace GroceriesApi.Services
             return groceryPurchasedModel;
         }
 
+        public List<GroceryPurchasedModel> Create(List<GroceryPurchasedModel> groceryPurchasedModelList)
+        {
+            _groceryPurchasedModels.InsertMany(groceryPurchasedModelList);
+            return groceryPurchasedModelList;
+        }
+
         public void Update(string id, GroceryPurchasedModel groceryPurchasedModelIn) =>
             _groceryPurchasedModels.ReplaceOne(groceryPurchasedModel => groceryPurchasedModel.id == id, groceryPurchasedModelIn);
 

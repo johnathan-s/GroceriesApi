@@ -42,6 +42,8 @@ namespace GroceriesApi
 
             services.AddSingleton<GroceryPurchasedService>();
 
+            services.AddSingleton<GroceryStoreService>();
+
             services.AddControllers();
 
             services.AddSwaggerGen( gen =>
