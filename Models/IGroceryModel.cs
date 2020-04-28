@@ -4,7 +4,7 @@ namespace GroceriesApi.Models
 {
     public interface IGroceryModel
     {
-        string id { get; set; }
-        string grocery { get; set; }
+        public string id { get; set; }
+        public string grocery { get; set; }
     }
 }

@@ -15,12 +15,13 @@ namespace GroceriesApi.Models
         public string id { get; set; }
         public decimal itemprice { get; set; }
         public decimal totalprice { get; set; }
-        public string store { get; set; }
+        public GroceryStoreModel store { get; set; }
         public string brand { get; set; }
         public string grocery { get; set; }
         public decimal quantity { get; set; }
         public DateTime date { get; set; }
         public bool onsale { get; set; }
         public DateTime? sellByDate { get; set; }
+        public string section { get; set; }
     }
 }

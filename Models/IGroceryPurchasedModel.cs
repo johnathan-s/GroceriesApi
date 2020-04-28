@@ -8,8 +8,10 @@ namespace GroceriesApi.Models
     {
         decimal itemprice { get; set; }
         decimal totalprice { get; set; }
-        string store { get; set; }
+        GroceryStoreModel store { get; set; }
         DateTime date { get; set; }
         bool onsale { get; set; }
+        string section { get; set; }
+
     }
 }

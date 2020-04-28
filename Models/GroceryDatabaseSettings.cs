@@ -10,6 +10,7 @@ namespace GroceriesApi.Models
         public string GroceryListCollectionName { get; set; }
         public string GroceryPurchasedCollectionName { get; set; }
         public string GroceryDueDateCollectionName { get; set; }
+        public string GroceryStoreCollectionName { get; set; }
         public string ConnectionString { get; set; }
         public string DatabaseName { get; set; }
     }
