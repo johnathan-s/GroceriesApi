@@ -18,10 +18,12 @@ namespace GroceriesApi.Models
         public GroceryStoreModel store { get; set; }
         public string brand { get; set; }
         public string grocery { get; set; }
-        public decimal quantity { get; set; }
+        public int quantity { get; set; }
+        public decimal weight { get; set; }
         public DateTime date { get; set; }
         public bool onsale { get; set; }
         public DateTime? sellByDate { get; set; }
         public string section { get; set; }
+        public string groceryid { get; set; }
     }
 }

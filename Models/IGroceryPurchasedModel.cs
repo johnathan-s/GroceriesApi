@@ -4,14 +4,19 @@ using System.Text;
 
 namespace GroceriesApi.Models
 {
-    public interface IGroceryPurchasedModel : IGroceryModel, IGroceryDueDate
+    public interface IGroceryPurchasedModel : IGroceryModel
     {
-        decimal itemprice { get; set; }
-        decimal totalprice { get; set; }
-        GroceryStoreModel store { get; set; }
-        DateTime date { get; set; }
-        bool onsale { get; set; }
-        string section { get; set; }
-
+        public string id { get; set; }       
+        public string groceryid { get; set; }
+        public decimal itemprice { get; set; }
+        public decimal totalprice { get; set; }
+        public GroceryStoreModel store { get; set; }
+        public string brand { get; set; }
+        public string section { get; set; }
+        public int quantity { get; set; }
+        public decimal weight { get; set; }
+        public DateTime date { get; set; }
+        public bool onsale { get; set; }
+ 
     }
 }

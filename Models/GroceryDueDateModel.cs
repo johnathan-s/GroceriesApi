@@ -14,5 +14,6 @@ namespace GroceriesApi.Models
         public string id { get; set; }
         public string grocery { get; set; }
         public DateTime? sellByDate { get; set; }
+        public string groceryid { get; set; }
     }
 }

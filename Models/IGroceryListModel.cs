@@ -9,6 +9,7 @@ namespace GroceriesApi.Models
         bool onlist { get; set; }
         string section { get; set; }
         string brand { get; set; }
-        decimal quantity { get; set; }
+        int quantity { get; set; }
+        decimal weight { get; set; }
     }
 }
