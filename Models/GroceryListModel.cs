@@ -17,6 +17,5 @@ namespace GroceriesApi.Models
         public string grocery { get; set; }
         public int quantity { get; set; }
         public decimal weight { get; set; }
-        
     }
 }
